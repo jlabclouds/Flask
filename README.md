@@ -4,7 +4,7 @@ Flask is a Python project that demonstrates how to build web applications using 
 
 ## Best Use Cases
 
-FlaskJinjaPy is ideal for:
+Flask is ideal for:
 
 - **Learning Flask and Jinja2:** FlaskJinjaPy offers a straightforward and well-documented codebase, making it perfect for beginners who want to grasp the fundamentals of web development in Python. The project demonstrates how routing, request handling, and template rendering work together, providing a clear learning path for new developers.
 
@@ -20,10 +20,10 @@ This project provides a solid foundation for building web applications that requ
 
 ## Example Use Cases and Related Technologies
 
-Here are some practical scenarios where FlaskJinjaPy can be applied, along with specific examples:
+Here are some practical scenarios where Flask can be applied, along with specific examples:
 
 - **Personal Portfolio Website:**  
-    Use FlaskJinjaPy to build a dynamic portfolio that displays your projects, skills, and blog posts. For example, you can create a `/projects` route that renders a list of projects from a Python data structure or database, and a `/blog` route that displays articles using Jinja2 templates.
+    Use Flask to build a dynamic portfolio that displays your projects, skills, and blog posts. For example, you can create a `/projects` route that renders a list of projects from a Python data structure or database, and a `/blog` route that displays articles using Jinja2 templates.
 
 - **Internal Dashboards:**  
     Develop a dashboard for your team to monitor sales, website analytics, or server status. For instance, you can fetch data from an API or database and render interactive charts using libraries like Chart.js, all within a FlaskJinjaPy app.
@@ -37,7 +37,7 @@ Here are some practical scenarios where FlaskJinjaPy can be applied, along with 
 - **Educational Demos:**  
     Demonstrate web development concepts in a classroom or workshop setting. For example, show how to implement user authentication, template inheritance, or form validation using simple, readable code.
 
-FlaskJinjaPy works well alongside the following technologies and tools:
+Flask works well alongside the following technologies and tools:
 
 - **Flask Extensions:**  
     - *Flask-WTF:* Simplifies form creation and validation.  
@@ -90,7 +90,7 @@ These examples and integrations make FlaskJinjaPy a flexible starting point for 
 ## Project Structure
 
 ```
-FlaskJinjaPy/
+Flask/
 ├── app.py
 ├── templates/
 │   └── index.html
