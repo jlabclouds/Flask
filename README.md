@@ -1,6 +1,6 @@
-# Flask Jinja
+# Flask
 
-Flask Jinja is a Python project that demonstrates how to build web applications using [Flask](https://flask.palletsprojects.com/) and [Jinja2](https://jinja.palletsprojects.com/).
+Flask is a Python project that demonstrates how to build web applications using [Flask](https://flask.palletsprojects.com/) and [Jinja2](https://jinja.palletsprojects.com/).
 
 ## Best Use Cases
 
