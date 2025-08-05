@@ -67,6 +67,7 @@ These examples and integrations make FlaskJinjaPy a flexible starting point for 
 - Easy to extend and customize
 
 ## Getting Started
+https://github.com/authlib/example-oauth2-server/tree/master
 
 1. **Clone the repository:**
     ```bash
@@ -79,13 +80,43 @@ These examples and integrations make FlaskJinjaPy a flexible starting point for 
     pip install -r requirements.txt
     ```
 
-3. **Run the application:**
+3. **Set Flask and Authlib environment variables**
+   ```bash
+   # DO NOT SET THIS IN PRODUCTION!
+   export AUTHLIB_INSECURE_TRANSPORT=1
+   ```
+
+4. ** Create Database and Run the application:**
     ```bash
     python app.py
+    flask app __init__.py
     ```
 
-4. **Open your browser:**  
+5. **Open your browser:**  
     Visit [http://localhost:5000](http://localhost:5000)
+
+6. **Passwd flow example**
+       - Get client_id and client_secret
+   ```bash
+   $ curl -u ${client_id}:${client_secret} -XPOST http://127.0.0.1:5000/oauth/token -F grant_type=password -F username=${username} -F password=valid -F scope=profile
+   ```
+      - Note password=valid
+   ```bash
+   $ curl -H "Authorization: Bearer ${access_token}" http://127.0.0.1:5000/api/me
+   ```
+      - Grant Auth, send code to Auth server to get access token
+   ```bash
+   $ curl -u ${client_id}:${client_secret} -XPOST http://127.0.0.1:5000/oauth/token -F grant_type=authorization_code -F scope=profile -F code=${code}
+   ```
+   ```bash
+   $ curl -H "Authorization: Bearer ${access_token}" http://127.0.0.1:5000/api/me
+   ```
+
+8. **Auth flow example**
+       - Test the auth code flow
+   ```bash
+   $ open http://127.0.0.1:5000/oauth/authorize?response_type=code&client_id=${client_id}&scope=profile
+   ```
 
 ## Project Structure
 
